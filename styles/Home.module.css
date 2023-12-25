@@ -1,92 +1,71 @@
+.main {
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 46px;
+}
+
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 20vh 24px 0 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background: #1a1e2a;
+  color: whitesmoke;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.rightContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
-  text-align: center;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
+.btnContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 24px;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.teacher {
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: underline;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
+.secondaryText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.image {
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 8px;
+}
+
+@media (max-width: 1120px) {
+  .main {
+    display: flex;
     flex-direction: column;
+    gap: 24px;
+  }
+  .container {
+    padding: 10vh 24px 0 24px;
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .container {
+    padding: 5vh 24px 0 24px;
+  }
+}
+@media (max-width: 400px) {
+  .main {
+    gap: 12px;
   }
 }
