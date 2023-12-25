@@ -1,0 +1,19 @@
+.button {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 18px;
+    border: 1px solid transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 100 !important;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.buttonText {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
