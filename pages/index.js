@@ -1,9 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation";
-import Button from "../components/ui-kit/Button";
-import Image from "next/image";
-import teacher from "../public/teacher.jpg";
 import MainLeftSection from "../components/pagesComponents/main/mainLeftSection";
 import MainRightSection from "../components/pagesComponents/main/mainRightSection";
 
